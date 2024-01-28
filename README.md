@@ -10,6 +10,8 @@
 
 ![Ekran görüntüsü 2024-01-28 134450](https://github.com/fthatmc/MvcCv/assets/136472585/98a90204-7e4f-4c0d-a68f-ba694b8b0c81)
 
+![Ekran görüntüsü 2024-01-28 140433](https://github.com/fthatmc/MvcCv/assets/136472585/4e5c29be-2c4d-40f2-bfd0-862edbf94559)
+
 
 
 
