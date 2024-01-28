@@ -1,3 +1,23 @@
+## Kullanılan Teknolojiler
+- Asp.Net Core 5.0
+- Entity Framework DbFirst
+- Repository Design Patern
+- SQL
+- Html
+- Css
+- Bootstrap
+- JavaScript
+ ## Öne Çıkan Özellikler
+ - Login Giriş Paneli
+ - LogOut
+ - Proje Seviyesinde Authorize
+ - Validation Kontrolleri
+ - Durumu Aktif-Pasif Yapma
+ - PartialView Kullanımı
+
+## Projeye Ait Bazı Görseller
+
+
 ![Ekran görüntüsü 2024-01-28 134143](https://github.com/fthatmc/MvcCv/assets/136472585/35458b8b-31aa-464b-8003-0fcef2424cb0)
 
 ![Ekran görüntüsü 2024-01-28 134024](https://github.com/fthatmc/MvcCv/assets/136472585/0007ae96-086b-4676-a981-698f19d02388)
