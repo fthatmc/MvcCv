@@ -1,0 +1,88 @@
+﻿@using MvcCv.Models.Entitiy
+@model List<TblYeteneklerim>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@{string renk = ""; }
+@{string labelrenk = ""; }
+<!DOCTYPE html>
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Yetenek Listem</h3>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th style="width: 10px">#</th>
+                    <th>Yetenek</th>
+                    <th>Oran</th>
+                    <th style="width: 40px">Derece</th>
+                    <th style="width: 150px">İşlem Yap</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var x in Model)
+                {
+                    if (x.Oran >= 0 && x.Oran <= 50)
+                    {
+                        renk = "progress-bar bg-danger";
+                        labelrenk = "badge bg-danger";
+                    }
+                    if (x.Oran >= 51 && x.Oran <= 69)
+                    {
+                        renk = "progress-bar bg-warning";
+                        labelrenk = "badge bg-warning";
+                    }
+                    if (x.Oran >= 70 && x.Oran <= 84)
+                    {
+                        renk = "progress-bar bg-primary";
+                        labelrenk = "badge bg-primary";
+                    }
+                    if (x.Oran >= 85)
+                    {
+                        renk = "progress-bar bg-success";
+                        labelrenk = "badge bg-success";
+                    }
+
+                    <tr>
+                        <td>@x.ID</td>
+                        <td>@x.Yetenek</td>
+                        <td>
+                            <div class="progress progress-xs">
+                                <div class="@renk" style="width: @x.Oran%"></div>
+                            </div>
+                        </td>
+                        <td><span class="@labelrenk">@x.Oran %</span></td>
+                        <td class="project-actions text-right" style="padding-left:0px;">
+                           
+                            <a class="btn btn-info btn-sm" href="/Yetenek/YetenekDuzenle/@x.ID">
+                                <i class="fas fa-pencil-alt">
+                                </i>
+                                Düzenle
+                            </a>
+                            <a class="btn btn-danger btn-sm" href="/Yetenek/YetenekSil/@x.ID">
+                                <i class="fas fa-trash">
+                                </i>
+                                Sil
+                            </a>
+                        </td>
+                        
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+        <br />
+        <a href="/Yetenek/YeniYetenek/" class="btn btn-primary">Yeni Yetenek Ekle</a>
+    </div>
+      
+</div>
+
+
+
