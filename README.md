@@ -1,3 +1,8 @@
+# Cv Sitesi
+## Projenin Amacı
+Proje basit bir Cv sitesi projesidir, Kişisel Cv Sitesi amaçlı kullanılabilir ayrıca sayfa sonunda Cv sahibine mesaj gönderebileceğiniz iletişim bölümü bulunmaktadır.
+Asp.Net Core MVC 5.0 kullanılarak geliştirilen bu uygulama, Entity Framework DbFirst yaklaşımı kullanılarak yapılmıştır. Repository Design Patern kullanılarak CRUD (Create, Read, Update, Delete) işlemlerin daha basit yapılması ve temiz kod mantığına uygun olması hedeflenmiştir.
+
 ## Kullanılan Teknolojiler
 - Asp.Net Core 5.0
 - Entity Framework DbFirst
@@ -7,16 +12,16 @@
 - Css
 - Bootstrap
 - JavaScript
+  
  ## Öne Çıkan Özellikler
  - Login Giriş Paneli
  - LogOut
  - Proje Seviyesinde Authorize
  - Validation Kontrolleri
- - Durumu Aktif-Pasif Yapma
  - PartialView Kullanımı
+ - Linq Sorgulamaları
 
 ## Projeye Ait Bazı Görseller
-
 
 ![Ekran görüntüsü 2024-01-28 134143](https://github.com/fthatmc/MvcCv/assets/136472585/35458b8b-31aa-464b-8003-0fcef2424cb0)
 
